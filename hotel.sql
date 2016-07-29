@@ -3,9 +3,9 @@ CREATE TABLE `rooms` (
   `nightlyRate` INT(11) NOT NULL,
   `numberBedrooms` INT(11) NOT NULL,
   `numberWindows` INT(11) NOT NULL,
-  `privateKitchenYN` TINYINT(1) NOT NULL,
-  `rentableYN` TINYINT(1) NOT NULL,
-  `carpetYN` TINYINT(1) NOT NULL
+  `privateKitchen` BOOLEAN NOT NULL,
+  `rentable` BOOLEAN NOT NULL,
+  `carpet` BOOLEAN NOT NULL
 );
 
 CREATE TABLE `guests` (
