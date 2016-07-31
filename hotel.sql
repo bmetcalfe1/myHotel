@@ -20,12 +20,12 @@ CREATE TABLE `guests` (
 CREATE TABLE `bookings` (
   `reservationNumber` INT(11) NOT NULL AUTO_INCREMENT,
   `roomNumber` INT(11) NOT NULL,
-  `guestId` INT(11) NOT NULL,
+  `guest_id` INT(11) NOT NULL,
   `checkIn` DATE NOT NULL, 
   `checkOut` DATE NOT NULL,
   PRIMARY KEY (`reservationNumber`),
   FOREIGN KEY (`roomNumber`) REFERENCES `rooms` (`roomNumber`),
-  FOREIGN KEY (`guestId`) REFERENCES `guests` (`guest_id`)
+  FOREIGN KEY (`guest_id`) REFERENCES `guests` (`guest_id`)
 );
 
 
